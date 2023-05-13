@@ -1,8 +1,19 @@
-import './App.css'
-import Message from './Message'
+import "./App.css";
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  return <><Message/></>
+  const sets = [
+    "War of the Spark",
+    "Throne of Eldraine",
+    "Ikoria: Lair of Behemoths",
+    "Mirage",
+  ];
+
+  return (
+    <>
+      <ListGroup items={sets} heading={"Magic the Gathering Sets"} />
+    </>
+  );
 }
 
-export default App
+export default App;
